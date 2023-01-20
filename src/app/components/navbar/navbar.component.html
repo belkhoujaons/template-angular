@@ -1,0 +1,54 @@
+<div class="bigContainer">
+    <div class="container">
+        <svg-icon src="../../../assets/Logo.svg"></svg-icon>
+        <!-- <img class="icon" src="../../../assets/Logo.png"> -->
+        <!-- <p class="TextLogo">My<b>VPN</b></p> -->
+    </div>
+
+    <div class="textContainer">
+        <p class="text">About</p>
+        <p class="text">Features</p>
+        <p class="text">Pricing</p>
+        <p class="text">Testimonials</p>
+        <p class="text">Help</p>
+    </div>
+    <div class="buttonDiv">
+        <p class="signIn">Sign In</p>
+        <button type="button" class="btn btn-outline-danger signUpButton"><p class="signUpText">Sign up</p></button>
+    </div>
+    <svg-icon *ngIf="!click"  (click)="clickButton()" class="menu-icon" src="../../../assets/menu.svg"></svg-icon>
+</div>
+
+
+<div *ngIf="click" class="sideContainer">
+
+    <div class="d-flex flex-row justify-content-between w-100 pr-3">
+        <svg-icon src="../../../assets/Logo.svg"></svg-icon>
+        <svg-icon style="margin-right: 3%;" (click)="clickButton()" src="../../../assets/closeButton.svg"></svg-icon>
+
+    </div>
+    <div class="textContainerMenu">
+
+      <label class="textMenu">About</label>
+      <label class="textMenu">Features</label>
+      <label class="textMenu">Pricing</label>
+      <label class="textMenu">Testimonials</label>
+      <label class="textMenu">Help</label>
+
+    </div>
+    <div class="buttonDivMenu">
+      <p class="SignIn-menu">Sign In</p>
+      <button type="button" class="btn btn-outline-danger signUpButton"><p class="signUpText">Sign up</p></button>
+    </div>
+
+    <div class="d-flex flex-column justify-content-between align-items-center w-100" >
+      <div class="socialMedia m-2">
+        <svg-icon class="icone" src="../../../assets/Facebook.svg"></svg-icon>
+                <svg-icon class="icone" src="../../../assets/Twitter.svg"></svg-icon>
+                <svg-icon class="icone" src="../../../assets/Instagram.svg"></svg-icon>
+
+      </div>
+      <label class="credits ml-sm-2">©2021MyVPN</label>
+    </div>
+
+  </div>
